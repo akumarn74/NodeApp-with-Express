@@ -1,0 +1,18 @@
+<html>
+    <head>
+    
+    </head>
+
+    <body>
+        <h1>
+            {{title}}
+        </h1>
+        <ul>
+            {{!-- taking it from app.js --}}
+            {{#each list}} 
+            {{!-- list of objects declaed in app.js --}}
+                <li>{{this}}</li>
+            {{/each}}
+        </ul>
+    </body>
+</html>
