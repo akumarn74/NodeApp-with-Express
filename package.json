@@ -18,6 +18,8 @@
     "gulp-jshint": "^2.1.0",
     "jade": "^1.11.0",
     "jshint-stylish": "^2.2.1",
+    "mongodb": "^2.2.33",
+    "mssql": "^4.1.0",
     "wiredep": "^4.0.0"
   }
 }

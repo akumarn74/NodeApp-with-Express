@@ -14,6 +14,7 @@ var nav = [{
 }];
 
 var bookRouter = require('./src/routes/bookRoutes')(nav);
+var adminRouter = require('./src/routes/adminRoutes')(nav);
 var authorRouter = express.Router();
 
 app.use(express.static('public')); // using the static data
@@ -25,6 +26,8 @@ authorRouter.route('/Authors')
     });
 
 app.use('/Books', bookRouter);
+app.use('/Admin', adminRouter);
+
 app.use('/Authors', authorRouter);
 var handlebars = require('express-handlebars'); //intilaizing express-handlebars
 app.engine('.hbs', handlebars({extname: '.hbs'})) //engune using handlebars
